@@ -1,0 +1,283 @@
+
+body {
+    max-width: 2000px;
+}
+
+
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 90%;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header_p {
+    font-size: 1.1vw;
+}
+
+.header_li {
+    list-style: none;
+    font-size: 1.1vw;
+    text-align: right;
+}
+
+
+
+.images {
+    max-width: 750px;
+}
+
+
+.images_link {
+    display: block;
+}
+
+
+/*box-shadow: rgba(50, 50, 93, 0.25) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.25) -3px -3px 6px 1px inset; */
+/*-------------li-------------*/
+
+.title {
+    position: fixed;
+    left: 10%;
+    top: 50%;
+    transform: translateX(-50%)
+                translateY(-50%);
+    
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+
+.title_li {
+    list-style:none;
+    color: #D0D0D0;
+    font-size: 0.9vw;
+    padding-left: 50px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px;
+    position: relative;
+    
+}
+
+
+.title_li:hover{
+    color: #707070;
+}
+
+  .title_li::after {
+    background-color: #d0d0d0;
+    bottom: 10px;
+    content: '';
+    display: block;
+    height: 2px;
+    right: 50px;
+    position: absolute;
+    transition: .3s all;
+    width: 4px;
+  }
+  
+  .title_li:hover::after {
+    width: 50%;
+  }
+
+
+
+/*-------------li-------------*/
+
+
+
+
+
+section {
+    display: flex;
+  }
+  .one {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    pointer-events: none;
+  }
+
+  .one p {
+      pointer-events: none;
+  }
+  .bg {
+    position: fixed;
+
+
+    right: 5%;
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    z-index: -1;
+
+    top: 35vh;
+
+
+
+    width: 60vw;
+  }
+
+  .show {
+      right: 0;
+      pointer-events: none;
+  }
+.first {
+   min-height: 150vh;
+}
+
+  .show .bg {
+    opacity: 1;
+  }
+  .bg._01 {
+
+
+  }
+  .bg._02 {
+    
+  }
+  .bg._03 {
+    
+  }
+  .bg._04 {
+    
+  }
+  .bg._05 {
+    
+  }
+  .bg._06 {
+    
+  }
+  .bg._07 {
+    
+  }
+  .bg._08 {
+    
+  }
+
+
+
+  /*
+  .onebox {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+  }
+  .onebox img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    margin-bottom: 15px;
+  } 
+   */
+
+  .onebox p {
+    text-align: center;
+    margin: 0;
+  }
+
+
+  /*==================
+  base
+  ==================*/
+  
+
+/*
+  html {
+    box-sizing: border-box;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+    word-break: break-word;
+  }
+  p._a {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 30px 0 0;
+  }
+  p._a .link {
+    display: inline-block;
+    color: #607D8B;
+    padding-left: 1.3em;
+    text-indent: -1.3em;
+  }
+  p._a .link:before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #607D8B;
+    border-right: 2px solid #607D8B;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-right: 10px;
+  }
+
+
+
+*/
+
+
+
+
+
+/*----------------------*/
+  
+  .stalker {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    transition: transform .25s ease-out;
+    pointer-events: none;
+
+    background: rgba(255,255,255,0.4);
+    border: 5px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(3px);
+   -webkit-backdrop-filter: blur(5px);
+
+   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   position: fixed;
+  }
+
+  .click {
+    font-size: 24px;
+    font-weight: 100;
+    color: #d0d0d0;
+    letter-spacing: 0.2em;
+  }
+  
+
+  

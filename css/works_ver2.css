@@ -1,0 +1,468 @@
+
+html {
+  height: 100vh;
+}
+  body {
+    margin: auto;
+    
+    
+}
+
+
+
+main {
+    max-width: 1800px;
+}
+
+
+.main_maxwidth {
+  display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    padding-right: 150px;
+    padding-left: 150px;
+    align-items: center;
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+/*--------------ヘッダーはcommon----------------*/
+
+
+
+/*------------------------*/
+
+  main {
+
+    margin: auto;
+
+}
+
+
+
+
+
+
+/*----------------------------------------*/
+
+
+
+
+
+
+
+.title {
+    /*position: fixed;*/
+    top: 5vw;
+    left: 5vw;
+    z-index: 999;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  /*----------title↓↓↓↓↓↓*/
+
+
+  	
+@media screen and (min-width: 1800px){
+
+  
+  .title__list {
+    height: 50%;
+  }
+}
+ 
+
+
+
+  /*title*/
+  .title__list {
+    list-style: none;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    left: 10%;
+    top: 50%;
+    
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+
+  }
+
+
+ 
+  .title__link {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+  }
+/*
+    color: #D0D0D0;
+    font-size: 0.9vw;
+    padding-left: 50px;
+    display: inline-block;
+    padding-bottom: 4px;
+    content: '';
+    
+  }
+
+  // スクロールで対応のsectionが現れた時*/
+  .title__link.is-active {
+    color: #707070;
+  }
+
+  .title__link.is-active::before {
+    position: absolute;
+    background-color: #d0d0d0;
+    z-index: -1;
+  }
+
+/*----------ホバー↓↓↓↓↓↓*/
+
+
+ .title__item {
+    list-style:none;
+    color: #D0D0D0;
+    font-size: 1.1vw;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 7px;
+    position: relative;
+    font-size: calc(12px + 6 * (100vw - 800px)/1200);
+  }
+
+
+  .title__item:hover{
+    color: blue;
+}
+
+  .title__item::after {
+    background-color: blue;
+    bottom: 10px;
+    content: '';
+    display: block;
+    height: 2px;
+    right: 6vw;
+    position: absolute;
+    transition: .3s all;
+    width: 4px;
+    display: flex;
+  }
+  
+  .titl__item:hover::after {
+    width: 50%;
+  }
+
+
+.active {
+  color: #707070;
+}
+
+.active::after {
+    width: 50%;
+}
+
+
+  .abc{
+    background-color: #ff8095;
+    
+  }
+
+
+
+ /*------------↓↓↓スクロール領域↓↓↓---------------*/
+
+
+ .wrap-vertical{
+
+	overflow: hidden;
+	width: 830px;
+	height: 380px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    margin-left: auto;
+
+
+    display: flex;
+
+
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+
+
+  
+}
+.wrap-vertical__inner{
+	overflow-y: scroll;
+	/*width: calc(830px + 17px);*/
+	height: 100%;
+	/*padding: 1em;*/
+	/*padding-right: calc(1em + 17px);*/
+  width: 100%;
+
+
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;       /* Firefox 対応 */
+    
+
+    
+}
+
+
+
+
+
+
+::-webkit-scrollbar-thumb {
+  background: #ff8095;
+}
+.wrap-vertical__inner::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;}
+
+
+
+
+
+
+.wrap-vertical {
+  overflow: scroll;
+  min-height: 380px;
+  padding-top: 0px;
+}
+ 
+.wrap-vertical__inner {
+  min-height: 3040px;
+}
+
+
+
+
+
+
+
+
+
+
+
+ /*-----------------------------*/
+
+
+ 
+
+
+
+
+
+
+
+
+/*
+
+  @media screen and(max-width: 1800px){
+    header {
+      width: 90%;
+    }
+
+
+    main {
+      width: 80%;
+    }
+   }
+
+
+   */
+
+
+
+
+
+
+
+
+
+
+   /*----------------------
+  
+  .stalker {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    transition: transform .25s ease-out;
+    pointer-events: none;
+
+    background: rgba(255,255,255,0.4);
+    border: 5px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(3px);
+   -webkit-backdrop-filter: blur(5px);
+
+   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   position: fixed;
+  }
+
+  .click {
+    font-size: 24px;
+    font-weight: 100;
+    color: #d0d0d0;
+    letter-spacing: 0.2em;
+  }
+  
+
+
+
+/*---------------マウスストーカー追加--------------*/
+html,
+body {
+  cursor: none;
+}
+a{
+  cursor: none;
+}
+
+
+.cursor,
+.follower {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  background-color: blue;
+}
+
+.follower {
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.4);
+    border: 2px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(3px);
+   -webkit-backdrop-filter: blur(5px);
+
+   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  transition: transform linear 0.2s, width ease 0.1s, height ease 0.1s;
+
+  
+}
+
+
+.is-active {
+    width: 130px;
+    height: 130px;
+  }
+
+
+
+.scroll_first {
+  color: blue;
+  letter-spacing: 0.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------*/
+
+footer {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+  
+
+
+
+
+  main {
+    margin-left: 5vw;
+  }
+  .title__list {
+
+    right: 5%;
+  }
+
+
+
+
+  .wrap-vertical {
+    width: 30%;
+    height: 30%;
+  }
+
+
+
+}

@@ -1,0 +1,245 @@
+
+  body {
+    margin: auto;
+    min-height: 100%;
+
+}
+
+
+/*--------------ヘッダーはcommon----------------*/
+
+
+  
+/*------------------------*/
+
+
+/*------------------main----------------------*/
+
+
+
+main {
+  max-width: 2000px;
+  padding-top: 20vh;
+  width: 90%;
+}
+
+
+.main_contents {
+  
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 20vh;
+}
+
+.name {
+  font-size: 3vw;
+  text-shadow: 0 2px 3px rgba(255, 255, 255, 0.3), 0 -1px 2px rgba(0, 0, 0, 0.2);
+  color: #f6f6f6;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+
+margin-bottom: 10px;
+  
+}
+
+
+.name::after {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: blue;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform .5s;
+  z-index: 0;
+}
+.name:hover::after {
+  transform-origin: right top;
+  transform: scale(1, 1);
+  z-index: 0;
+}
+
+
+
+.name:hover {
+  color: #efefef;
+  transition: all 0.5s 0s ease;
+}
+.data:hover {
+  color: #e0e0e0;
+  transition: all 0.5s 0s ease;
+}
+
+.data {
+  font-size: 0.8vw;
+  text-shadow: 0 2px 3px rgba(255, 255, 255, 0.3), 0 -1px 2px rgba(0, 0, 0, 0.2);
+  color: #f6f6f6;
+  letter-spacing: 0.2em;
+  line-height: 2em;
+
+}
+
+.text{
+  background-color: #f6f6f6;
+  width: 60%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-right: 4vw;
+  padding-left: 4vw;
+
+
+  font-size: 0.8vw;
+
+  line-height: 2.8vh;
+  
+
+  box-shadow: 0 2px 3px rgba(255, 255, 255, 0.3), 0 -1px 2px rgba(0, 0, 0, 0.2);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*---------footer--------
+  
+ footer {
+    background-color:#f6f6f6;
+    color: #707070;
+
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}
+
+.footer_all {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.footer_contact {
+    display: flex;
+    font-size: 2vh;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.copy {
+  font-size: 10px;
+}
+
+
+.footer_conter {
+  
+}
+-----*/
+
+
+
+ /*---------footerはcommonへ-------------*/
+  
+
+
+ /*----------------------*/
+
+
+
+
+
+
+
+
+
+
+/*---------------マウスストーカー追加--------------*/
+html,
+body {
+  cursor: none;
+}
+
+a{
+  cursor: none;
+}
+
+
+.cursor,
+.follower {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  background-color: blue;
+}
+
+.follower {
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.4);
+    border: 2px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(3px);
+   -webkit-backdrop-filter: blur(5px);
+
+   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  transition: transform linear 0.2s, width ease 0.1s, height ease 0.1s;
+
+  z-index: 10;
+
+  
+}
+
+
+.is-active {
+    width: 130px;
+    height: 130px;
+  }
+

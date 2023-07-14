@@ -1,0 +1,293 @@
+header {
+    font-size: 16px;
+}
+
+
+/*
+
+
+
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  src:url();
+}
+body {
+  background: #b0b0b0;
+  margin: 2rem;
+}
+header { 
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+  padding: 0;
+}
+header video { width: 100%; 
+
+  margin: auto;
+}
+
+
+
+svg { 
+  width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0; // needed for FF, Safari, Edge
+ 
+}
+
+.svg_container {
+  margin: auto;
+   left: 50%;
+  top: 50%;
+  min-width: 101%;
+  max-width: 101%;
+
+}
+
+
+.a {
+  margin: auto;
+}
+
+svg text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1vw;
+  text-shadow: 0 2px 3px rgba(255, 255, 255, 0.5), 0 -1px 2px rgba(0, 0, 0, 0.2);
+}
+svg rect {
+  fill: gainsboro;
+}
+svg > rect {
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+}
+
+
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header, footer {
+  display: none;
+  top: 0;
+}
+
+
+body {
+    background-color: #fcfcfc;
+    text-align: center;
+    font: 700 6.25em Helvetica;
+  }
+  
+
+  main {
+      text-align: center;
+      display: flex;
+      font-size: 6vw;
+
+      
+      margin-right: 5%;
+      margin-left: 5%;
+      flex-direction: column;
+      top: 0;
+  }
+
+ 
+  a {
+    background: #fcfcfc;
+    background-image: url(../images/works/works_03.png);
+
+
+    color: #fcfcfc;
+
+    color: rgba(0,0,0,0);
+    -webkit-background-clip: text;
+      box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+
+      height: 95vh;
+      margin: auto;
+
+      
+      
+      opacity: 0.3;
+
+  }
+  .works {
+    text-shadow: 0 2px 3px rgba(255, 255, 255, 0.5), 0 -1px 2px rgba(0, 0, 0, 0.2);
+    
+
+    
+  }
+  .works p {
+
+      margin-top: 40vh;
+      margin-bottom: 20vh;
+      margin-right: 18vw;
+      margin-left: 18vw;
+  }
+
+
+
+
+/**---------------------------------------**/
+
+
+
+
+/*
+  .button_wrapper {
+    text-align: center;
+  }
+  .button {
+    color: #78baff;
+    border: 1px solid #78baff;
+    border-radius: 4px;
+    background: #fff;
+    padding: 8px 16px;
+    transition: .5s;
+  }
+*/
+
+
+
+
+
+  .works p:hover {
+    transition: 1s;
+
+    opacity: 1;
+
+
+
+  }
+
+/*  
+  
+  .stalker {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    transition: transform .25s ease-out;
+    pointer-events: none;
+
+    background: rgba(255,255,255,0.4);
+    border: 5px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(3px);
+   -webkit-backdrop-filter: blur(5px);
+
+   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   z-index: 1000;
+  }
+
+  .click {
+    font-size: 24px;
+    font-weight: 100;
+    color: #d0d0d0;
+    letter-spacing: 0.2em;
+  }
+
+
+*/
+
+
+
+/*---------------マウスストーカー追加--------------*/
+html,
+body {
+  cursor: none;
+}
+a{
+  cursor: none;
+}
+
+
+.cursor,
+.follower {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  background-color: blue;
+}
+
+.follower {
+  width: 130px;
+  height: 130px;
+  background: rgba(255,255,255,0.4);
+    border: 2px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(3px);
+   -webkit-backdrop-filter: blur(5px);
+
+   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  transition: transform linear 0.2s, width ease 0.1s, height ease 0.1s;
+
+  
+}
+
+
+.is-active {
+    width: 130px;
+    height: 130px;
+  }
+
+
+
+
+/*
+
+.cursor_text {
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(158, 158, 255);
+  line-height: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  font: 100 24px Helvetica;
+
+  letter-spacing: 0.2em;
+}
+
+
+
+*/
+
+  
+
+
+
+
