@@ -15,36 +15,7 @@
 <!-------マウスストーカーに必要なjsファイルーーーーーーー-->
 
 
-<!--------
-<script type="text/javascript">
 
-
-$(function () {
-  
-
-    $(window).on("load scroll resize", function () {
-
-      var st = $(window).scrollTop();
-      var wh = $(".wrap-vertical__inner").height();
-      console.log(st)
-
-      $('.sec-scroll-point').each(function (i) {
-        var tg = $(this).offset().top;
-        var id = $(this).attr('id');
-
-        if (st > tg  - wh + (wh / 8)) {
-          $(".aaa__link").removeClass("is-active");
-          var link = $(".aaa__link[href *= " + id +"]");
-          $(link).addClass("is-active");
-        }
-      });
-  
-    });
-
-  });
-
-</script>
-スクロール位置---------->
 
 
 <!--------スクロール位置---------
@@ -113,15 +84,6 @@ $(function () {
               <li class="title__item"> 
                 <a href="#eins" class="title__link">eins</a>
               </li>
-              <li class="title__item"> 
-                <a href="#zwei" class="title__link">zwei</a>
-              </li>
-              <li class="title__item"> 
-                <a href="#drei" class="title__link">drei</a>
-              </li>
-              <li class="title__item"> 
-                <a href="#vier" class="title__link">vier</a>
-              </li>
             </ul>
           </nav>
         </div>
@@ -178,30 +140,6 @@ $(function () {
         </div>
       </section>
 
-      <section class="sec-scroll-point bg-grey" id="zwei">
-        <div class="inner">
-            <a href="../works/works_6.html" class="images_link link">
-          <img src="../images/works/works_06.png">
-        </a>
-        </div>
-      </section>
-
-      <section class="sec-scroll-point" id="drei">
-        <div class="inner">
-            <a href="../works/works_7.html" class="images_link link">
-          <img src="../images/works/works_07.png">
-        </a>
-        </div>
-      </section>
-
-      <section class="sec-scroll-point bg-blue" id="vier">
-        <div class="inner">
-            <a href="../works/works_8.html" class="images_link link">
-            <img src="../images/works/works_08.png">
-        </a>
-        </div>
-      </section>
-
       </div>
       </div>
 
@@ -231,13 +169,7 @@ $(function () {
 
 
 
-    <!----------------スクロール位置----------------
-    <script>
-      $('#button').on('click', function(){
-        $(window).scrollTop(300);
-      });
-    </script>
-    --------------スクロール位置---------------->
+    <!--------------スクロール位置---------------->
 
     <script>
       $('.wrap-vertical').scroll(function() {
@@ -246,23 +178,9 @@ $(function () {
     </script>
 
 
-<!--------
-<script>
-  $('#button').on('click', function(){
-    $('.wrap-vertical').scrollTop(560 + 16);
-  });
-</script>
--------------------------------->
 
-<!--ストーカー-
-<script>
-	const stalker = document.querySelector('.stalker');
-document.addEventListener('mousemove', function(e){
-  stalker.style.transform = `translate(${e.clientX - 75}px, ${e.clientY - 75}px`;
-})
-</script>
 
---ストーカー-->
+
 
 <!----------console.logに変数表示--(items[i].classList.add("active");と同義)----------------
 
@@ -355,35 +273,7 @@ items[0].classList.add("active");s
 <!-----------------------clickでホバーの挙動-------------------->
 
 
-<!----
 
-<script type="text/javascript">
-
-  const text = 
-  const
-
-  text[i].classList.add("active_text");
-
-
-
-  var
-  text = document.getElementsByClassName("text")
-
-  if (text )
-
-link[i].addEventListener("mouseenter", function() {
-  text.classList.add("active_text");
-});
-
-link[i].addEventListener("mouseleave", function() {
-  text.classList.remove("active_text");
-});
-
-}
-
-</script>
-
------>
 
 
 
