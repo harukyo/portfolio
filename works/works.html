@@ -1,0 +1,288 @@
+
+
+<!---------------
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<link href="../css/destyle.css" rel="stylesheet" type="text/css">
+	<link href="../css/works.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+
+<script type="text/javascript" src="../css/jquery.js"></script>
+<script type="text/javascript">
+  // ここに処理を記述します。
+        $(function(){
+  $(".one").each(function(i, elem){
+    var one = $(elem).offset().top;
+    $(window).on("load scroll resize", function(){
+      var two = $(window).height();
+      var three = $(window).scrollTop();
+      var showClass = "show";
+      var timing = 0; // 50px, add to css
+      if (three >= one - two + timing){
+        $(elem).addClass(showClass);
+      } else {
+        $(elem).removeClass(showClass);
+      }
+    });
+  });
+});
+</script>
+
+
+<script>
+    /*
+    $(function(){
+        $(".title_li").css({opacity:"0"});
+        $(window).scroll(function(){
+            $(".title_li").each(function(){
+
+            }
+            )
+        })
+    }
+*/
+    
+</script>
+
+
+
+<script type="text/javascript">
+
+$(function () {
+    $(window).on("load scroll resize", function () {
+
+      var st = $(window).scrollTop();
+      var wh = $(window).height();
+
+      $('.bg').each(function (i) {
+        var tg = $(this).offset().top;
+        var id = $(this).attr('id');
+
+        if (st > tg  - wh + (wh / 2)) {
+          $(".title").removeClass("title_li");
+          var link = $(".title[href *= " + id +"]");
+          $(link).addClass("title_li");
+        }
+      });
+  
+    });
+
+  });
+
+</script>
+
+
+<title>index.html</title>
+</head>
+
+<body>
+
+<div class="stalker"></div>
+
+    
+    <header>
+        <a href="../index.html">
+		    <p class="header_p">haruna kyono</p>
+        </a>
+
+        <div class="header_li">
+            <li>Works</li>
+            <li>About</li>
+            <li>Concept</li>
+        </div>
+
+    </header>
+    <main>
+
+
+        <section>
+        <ul class="title">
+            <div class="title_li">
+                <a href="../works/works_1.html">
+                    <li>title</li>
+                </a>
+            </div>
+
+            <div class="title_li">
+                <a href="../works/works_2.html">
+                    <li>title</li>
+                </a>
+            </div>
+            <div class="title_li">
+                <a href="../works/works_3.html">
+                    <li>title</li>
+                </a>
+            </div>
+            <div class="title_li">
+                <a href="../works/works_4.html">
+                    <li>title</li>
+                </a>
+            </div>
+            <div class="title_li">
+                <a href="../works/works_5.html">
+                    <li>title</li>
+                </a>
+            </div>
+            <div class="title_li">
+                <a href="../works/works_6.html">
+                    <li>title</li>
+                </a>
+            </div>
+            <div class="title_li">
+                <a href="../works/works_7.html">
+                    <li>title</li>
+                </a>
+            </div>
+            <div class="title_li">
+                <a href="../works/works_8.html">
+                    <li>title</li>
+                </a>
+            </div>
+        </ul>
+        </section>
+
+
+
+
+
+
+
+            <section>
+              <div class="one">
+                
+
+                    <a href="../works/works_1.html" class="images_link">
+                        <img src="../images/works/mein_img_all_half.png" class="bg _01">
+                    </a>
+
+
+                  <p class="first">1st</p>
+
+              </div>
+            </section>
+            <section>
+              <div class="one">
+                <a href="../works/works_2.html" class="images_link">
+                    <img src="../images/works/20dj055_03.png" class="bg _02">
+                </a>
+
+
+                  <p>2nd</p>
+
+              </div>
+            </section>
+
+            <section>
+              <div class="one">
+                <a href="../works/works_3.html" class="images_link">
+                    
+                    <img src="../images/works/works_03.png" class="bg _03">
+                </a>
+
+                  <p>3rd</p>
+
+              </div>
+            </section>
+            
+            <section>
+              <div class="one">
+                <a href="../works/works_4.html" class="images_link">
+                    <img src="../images/works/works_04.png" class="bg _04">
+                </a>
+
+                  <p>4th</p>
+
+              </div>
+            </section>
+            <section>
+              <div class="one">
+                <a href="../works/works_5.html" class="images_link">
+                    <img src="../images/works/works_05.png" class="bg _05">
+                </a>
+
+                  <p>5th</p>
+
+              </div>
+            </section>
+            <section>
+                <div class="one">
+                    <a href="../works/works_6.html" class="images_link">
+                        <img src="../images/works/works_06.png" class="bg _06">
+                    </a>
+  
+                    <p>6th</p>
+  
+                </div>
+              </section>
+              <section>
+                <div class="one">
+                    <a href="../works/works_7.html" class="images_link">
+                        <img src="../images/works/works_07.png" class="bg _07">
+                    </a>
+  
+                    <p>7th</p>
+  
+                </div>
+              </section>
+              <section>
+                <div class="one">
+                    <a href="../works/works_8.html" class="images_link">
+                        <img src="../images/works/works_08.png" class="bg _08">
+                    </a>
+  
+                    <p>8th</p>
+  
+                </div>
+              </section>
+
+            
+
+
+
+        <div class="stalker">
+
+            <text class="click">click</text>
+    
+        </div>
+
+
+
+
+
+
+        
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+
+
+<script>
+	const stalker = document.querySelector('.stalker');
+document.addEventListener('mousemove', function(e){
+  stalker.style.transform = `translate(${e.clientX - 75}px, ${e.clientY - 75}px`;
+})
+</script>
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+------------------>
