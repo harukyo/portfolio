@@ -131,7 +131,7 @@ main {
  .title__item {
     list-style:none;
     color: #D0D0D0;
-    font-size: 1.1vw;
+    font-size: 16px;
     position: relative;
     display: inline-block;
     padding-bottom: 7px;
@@ -239,7 +239,7 @@ main {
 }
  
 .wrap-vertical__inner {
-  min-height: 1900px;
+  min-height: 1140px;
 }
 
 
